@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONARE</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slide.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+         <h1 class="logo">DONARE</h1>
+         <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Content</li>
+            <li><a href="#"></a>Foundations</li>
+            <li class="ctn"><a href="#"></a>members</li>
+         </ul>
+         <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Introduction to our channel</h2>
+            <div class="line"></div>
+            <h1>PROMOTING WELFARE FOUNDATIONS</h1>
+        </div>
+
+    </header>
+
+    <!-- == About == -->
+
+    <section>
+        <div class="title">
+            <h1>About our channel</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/logo.png" alt="">
+                <h4> Our brand logo & tagline</h4>
+                <p>Donare simply means 'make a donation'. Our logo is based on our brand name that's all about donating, hence the coin symbol. 
+                And our tagline holds a simple message that every 'small' donation is considered big</p>
+            </div>
+            <div class="col">
+                <img src="./img/intro.png" alt="">
+                <h4> Our intro video</h4>
+                <p>We are promoting our youtube channel. Our youtube channel aims to inform and educate people through the youtube content 'animated videos'.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="explore">
+     <div class="explore-content">
+        <h1>OUR CONTENT</h1>
+        <div class="line"></div>
+        <p>We aim to educate and inform people about how to donate, why they should, and what will happen if they did, we want to explain the bright futures they can help secure for someone.
+             Suggestions of different charity foundations can be seen below</p>
+     </div>
+    </section>
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+<body2>
+    <!-- image slider start -->
+    <div class="slider">
+     <div class="slides">
+        <!-- radio buttons start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio buttons end -->
+        <!-- slides image start -->
+        <div class="slide first">
+            <img src="./img/pic1.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/pic2.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/pic3.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/pic4.png" alt="">
+        </div>
+        <!-- slide images end -->
+        <!-- automatic navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!-- automatic navigation end -->
+     </div>
+     <!-- manual navigation start -->
+     <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+     </div>
+     <!-- manual navigation end -->
+    </div>
+    <!-- image slider end -->
+    </body2>
+</html>
